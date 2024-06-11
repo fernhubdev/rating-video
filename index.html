@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My Video Rating</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Content from the first HTML document -->
+
+  <!-- Content from the second HTML document -->
+  <!-- Step 1 -->
+  <video controls width="320" height="240">
+    <!-- Step 3 and Step 4 -->
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Step 5 -->
+  <form>
+    <!-- Step 6 to Step 18 -->
+    <div>
+      <!-- Step 7 -->
+      <label for="rating">Rating:</label>
+      <!-- Step 8 to Step 11 -->
+      <input type="range" id="rating" name="rating" min="1" max="5" list="ratings">
+      <!-- Step 12 -->
+      <datalist id="ratings">
+        <!-- Step 13 to Step 18 -->
+        <option value="1" label="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5" label="5">
+      </datalist>
+    </div>
+    <!-- Step 19 -->
+    <button type="submit">Submit Rating</button>
+  </form>
+</body>
+
+</html>
